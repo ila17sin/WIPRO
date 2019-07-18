@@ -1,0 +1,390 @@
+{% extends 'base.html' %}
+{%load static%}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<!--  Hi {{ user.username }}!-->
+
+  <link rel="stylesheet" type='text/css' href="{% static 'css/main.css' %}"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="navbar">
+ <button><a class="active" href="{% url 'home' %}"><i class="fa fa-fw fa-home"></i> Home</a></button>
+<!--      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>-->
+      <button><a href="{% url 'AddOrg' %}"><i class="fa fa-fw fa-wrench"></i> Add Organization</a></button>
+      <button><a href="{% url 'Assessment' %}"><i class="fa fa-fw fa-user"></i> Create Assesment</a></button>
+      <button><a href="{% url 'MyHistory' %}"><i class="fa fa-fw fa-search"></i> My History</a></button>
+      <button><a href="{% url 'ColleagueHistory' %}"><i class="fa fa-fw fa-search"></i> Colleague's history</a></button>
+        <button><a href="{% url 'login' %}"><i class="fa fa-fw fa-user"></i> Logout</a></button>
+      <button><a href="{% url 'Profile' %}"><i class="fa fa-fw fa-envelope"></i> Hi {{ user.username }}!</a></button>
+
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The sidebar -->
+<!--  <div class="sidebar">-->
+<!--    <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>-->
+<!--    <a href="#addOrg"><i class="fa fa-fw fa-wrench"></i> Add Organization</a>-->
+<!--    <a href="#CreateAssesment"><i class="fa fa-fw fa-user"></i> Create Assesment</a>-->
+<!--    <a href="#myhistory"><i class="fa fa-fw fa-envelope"></i> My History</a>-->
+<!--    <a href="#colleage"><i class="fa fa-fw fa-envelope"></i> Find my colleague</a>-->
+<!--  </div>-->
+
+<div id="Content">
+    <div id="searchOrg">
+        <table>
+            <thead><tr><th scope="col" colspan="2">Search Organization</th></tr></thead>
+            <tbody>
+            <tr><td><input type="text" name="SearchingOrg"></td>
+            <td><button><i class="fa fa-fw fa-search"></i></button></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="assess">
+<table>
+  <thead>
+    <tr>
+      <th scope="col" colspan="1">My Assessments</th>
+      <th scope="col">Questions</th>
+      <th scope="col">Ratings out of 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong class="ttitle">Strategic Alignment</strong>
+      </td>
+      <td class="td1css">Current competitive differentiation in products & Services</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>
+        <strong class="ttitle">Strategic Alignment</strong>
+      </td>
+      <td class="td1css">Clarity in Definition of Vision & Goals</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>
+        <strong class="ttitle">Strategic Alignment</strong>
+      </td>
+      <td class="td1css">Identification of external and internal risks which may disrupt the business</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>
+        <strong class="ttitle">Strategic Alignment</strong>
+      </td>
+      <td class="td1css">Does organization has an appreciation of emerging trends which may impact the current business models ?
+</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>
+        <strong class="ttitle">Understanding the Customer</strong>
+      </td>
+      <td class="td1css">Does Customer recognize your products and services well ?
+</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Understanding the Customer</strong>
+      </td>
+      <td class="td1css">Net promoter Score across various product line against competition</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Understanding the Customer</strong>
+      </td>
+      <td class="td1css">Feedback Mechanism developed with Customers?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Understanding the Customer</strong>
+      </td>
+      <td class="td1css">Customer Loyalty and Stickiness to products & services</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Understanding the Customer</strong>
+      </td>
+      <td class="td1css">Can you track and monitor customer experience ?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Products and Services</strong>
+      </td>
+      <td class="td1css">Time to market for Product/Service Delivery against competition</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+      <tr>
+      <td>
+        <strong class="ttitle">Products and Services</strong>
+      </td>
+      <td class="td1css">Do you employ or value the concept of MVP and/or rapid prototyping?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Products and Services</strong>
+      </td>
+      <td class="td1css">Are key design principles and functionality integrated today to deliver a consistent experience?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+   <tr>
+      <td>
+        <strong class="ttitle">Products and Services</strong>
+      </td>
+      <td class="td1css">Is your current experience compliant with key guidelines and regulations (e.g. accessibility, security)?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Products and Services</strong>
+      </td>
+      <td class="td1css">Have you developed customer personas for your products and Services?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">People and Organization</strong>
+      </td>
+      <td class="td1css">How are your current organizational capabilities aligned to support your business objectives?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">People and Organization</strong>
+      </td>
+      <td class="td1css">Have you done a gap mapping for technology/business skillsets and requirements?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">People and Organization</strong>
+      </td>
+      <td class="td1css">Is your team equipped to use insights from Data to make smart business decisions?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">People and Organization</strong>
+      </td>
+      <td class="td1css">What is your current employee engagement level?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">People and Organization</strong>
+      </td>
+      <td class="td1css">Have you developed customer personas for your products and Services?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Technology</strong>
+      </td>
+      <td class="td1css">How well does your current technology infrastructure & systems  support your business goals & Vision?</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Technology</strong>
+      </td>
+      <td class="td1css">Cloud Adoption Level for Scalability & Cost Optimization</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Technology</strong>
+      </td>
+      <td class="td1css">Open Source Adoption</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Technology</strong>
+      </td>
+      <td class="td1css">Level for Automation within operations landscape
+</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  <tr>
+      <td>
+        <strong class="ttitle">Technology</strong>
+      </td>
+      <td class="td1css">Use of Analytics/AI/Machine Learning for Insightful business decisions</td>
+      <td class="tdcss"><select>
+          <option value="NA">NA</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3"><button>Submit Ratings</button></td>
+    </tr>
+  </tfoot>
+</table>
+        </div>
+</div>
+
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+
+
+{% endif %}
+{% endblock %}
+
+
