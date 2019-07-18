@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 #from accounts import views as accounts_views
 from Wipro_app import views
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.views.generic.base import TemplateView # new
 
 urlpatterns = [
@@ -31,7 +31,8 @@ urlpatterns = [
     path('ForgetPassword/', views.ForgetPassword,name='ForgetPassword'),
     path('Assessment/', views.Assessment,name='Assessment'),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'), # new
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    re_path(r'^register/', include('apps.register.urls')) # new
 ]
 
 
