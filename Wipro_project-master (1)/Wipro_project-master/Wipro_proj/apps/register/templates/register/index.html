@@ -1,13 +1,15 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'styles/register/login.css' %}"media="screen" title="no title"  charset="utf-8">
-    <title>Login/Registration</title>
+    <link rel="stylesheet" href="{% static 'styles/register/registration.css' %}"media="screen" title="no title"  charset="utf-8">
+    <title>Registration</title>
   </head>
 
   <body>
+
     {% if messages %}
       <ul class="messages">
       {% for message in messages %}
@@ -20,14 +22,27 @@
     	<a href = "{% url 'register:logout' %}">Logout</a>
     {% endif %}
     <div id="main">
+
     <form action="{% url 'register:register' %}" method="POST">
       {% csrf_token %}
-      <div class="block">
+
+            <table >
           <h4>Register</h4>
-          Username <input type="text" name="username"></input>
-          Email <input type="text" name="email"></input><br>
-          <input type="submit" label="register"></input><br>
-       </div>
+              <tr><td> Username:    </td><td> <input type="text" name="username"></input></td></tr>
+              <tr><td> Email:       </td><td> <input type="text" name="email"></input></td></tr>
+                <tr><td> Permissions:</td><td><select name="permissions" class="permissions">
+
+                    {% for permission in permissions %}
+                  <option value="{{permission.desc}}" >{{permission.desc}}</option>
+                  {% endfor %}
+
+<!--          <option value="supervisor">supervisor</option>-->
+                </select><br></td></tr>
+
+              <tr><td colspan="2" align="center"><input type="submit" label="register"></input></td></tr>
+
+        </table>
+
     </form>
     </div>
   </body>

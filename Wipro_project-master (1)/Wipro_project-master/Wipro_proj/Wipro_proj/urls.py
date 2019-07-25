@@ -33,7 +33,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('', views.redirect, name='redirect'),
     #path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    re_path(r'^register/', include('apps.register.urls')) # new
+    re_path(r'^logreg/', include('apps.register.urls')) # new
 ]
 
 

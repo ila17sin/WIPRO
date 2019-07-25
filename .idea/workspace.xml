@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64c51213-0409-4501-b262-e877bf40e25f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/db.sqlite3" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-330">
+              <caret line="6" column="130" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="6" selection-end-column="130" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/Login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/registration.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-154">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/Wipro_app/migrations/0001_initial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/sqlliteDB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>block</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/views.py" />
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/Wipro_app/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/login.css" />
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/index.html" />
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/Login.html" />
+        <option value="$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/registration.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/WIPRO.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <showExcludedFiles Scope="true" ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="styles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="styles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="register" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="WIPRO" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\informativetechnologies\WIPRO" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Wipro_project-master (1)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_project-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Wipro_proj" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64c51213-0409-4501-b262-e877bf40e25f" name="Default Changelist" comment="" />
+      <created>1563564008359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563564008359</updated>
+      <workItem from="1563564009566" duration="3995000" />
+      <workItem from="1563848701030" duration="22881000" />
+      <workItem from="1564063980190" duration="5091000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31967000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29623568" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/sqlliteDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/Wipro_app/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/static/styles/register/registration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="6" column="130" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="6" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wipro_project-master (1)/Wipro_project-master/Wipro_proj/apps/register/templates/register/Login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

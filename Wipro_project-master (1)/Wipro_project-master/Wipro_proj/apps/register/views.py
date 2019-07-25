@@ -23,7 +23,8 @@ def index(request):
 		username = False
 	if username:
 		context = {
-			"username": username
+			"username": username,
+			"permissions":Permission.objects.all()
 		}
 		return render(request, 'register/index.html', context)
 	else:
@@ -43,31 +44,105 @@ def loginindex(request):
 		username = False
 	if username:
 		context = {
-			"username": username
+			"username": username,
+			"permissions":Permission.objects.all()
 		}
 		return render(request, 'register/login.html', context)
 	else:
 		return render(request, 'register/login.html')
-    
+
 def register(request):
+
     user = User.objects.regvalidator(request.POST['username'], request.POST['email'])
+
     if user['errors'] != []:
         for errors in user['errors']:
             messages.add_message(request, messages.ERROR, errors)
         return redirect(reverse('register:home'))
     password = ""
     for i in range(8):
-    	password += random.choice(string.ascii_letters + string.digits);
+        password += random.choice(string.ascii_letters + string.digits);
     prehash = User.objects.bcryptor(password)
     pwhash = prehash['pwhash']
+
+    #permissions hard coded as of now
+    # Permission.objects.create(desc='employee')
+    # Permission.objects.create(desc='supervisor')
+
+    # User.objects.create(username = request.POST['username'], email = request.POST['email'], pwhash = pwhash)
+    # request.session['username'] = request.POST['username']
+    # request.session['permissions']=request.POST['permissions']
+    #
+    # namer = User.objects.get(email = request.POST['email'])
+
+    # User.objects.all().delete()
+    if Permission.objects.filter(desc='employee').exists() and Permission.objects.filter(desc='supervisor').exists() :
+        print('Employee && supervisor permission already present')
+    else:
+        # permissions hard coded as of now
+        print('Creating permissions')
+        Permission.objects.create(desc='employee')
+        Permission.objects.create(desc='supervisor')
+
+
+
+    # user=User.objects.all()
+    #
+    # for ss in user:
+    #     for permission in ss.permissions.all():
+    #         print(' the user is '+ ss.username+" "+ ss.email+ " " +permission.desc)
+
+    #
+    #
     User.objects.create(username = request.POST['username'], email = request.POST['email'], pwhash = pwhash)
+
+    user=User.objects.get(username=request.POST['username'],email=request.POST['email'],pwhash=pwhash)
+
+    permission=Permission.objects.get(desc=request.POST['permissions'])
+
+    user.permissions.add(permission)
+
+    user.save()
+    permission.save()
+
+    users=User.objects.all()
+
+    # for ss in user:
+    #     print(ss.username)
+
+    for ss in users:
+        for permission in ss.permissions.all():
+            print('The user entered is having the following '+ss.username+" "+ss.email+" "+permission.desc)
+
+
+    request.session['id']   =  user.id
     request.session['username'] = request.POST['username']
-    namer = User.objects.get(email = request.POST['email'])
-    request.session['id'] = namer.id
-    request.session['username'] = namer.username 
+    request.session['permissions'] = request.POST['permissions']
+
+    # request.session['username'] = request.POST['username']
+    # request.session['permissions']=Permission.objects.get(desc='employee')
+
+
+    # namer.permissions.add(Permission.objects.get(desc='employee'))
+    # namer.save()
+
+    # Permission.objects.all().delete()
+    # permissions=Permission.objects.all()
+
+    # # ppall=User.objects.all()
+    #
+    # for ss in permissions:
+    #     print('the user permission stored is '+ss.desc)
+    # #
+    # for pp in namer:
+    #     print('the namer is'+pp.permissions)
+    #
+    # request.session['id'] = namer.id
+    # request.session['username'] = namer.username
+    #
     messages.add_message(request, messages.INFO, password)
     return redirect(reverse('register:home'))
-    
+
 def login(request):
     user = User.objects.logvalidator(request.POST['email'], request.POST['password'])
     if user['errors'] != []:
