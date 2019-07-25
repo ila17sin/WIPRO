@@ -6,8 +6,6 @@
 
 {% block content %}
 {% if username %}
-	<h3>Hi {{ username }}!</h3>
-	<a href = "{% url 'register:logout' %}">Logout</a>
 <!--  Hi {{ user.username }}!-->
   
   <link rel="stylesheet" type='text/css' href="{% static 'css/main.css' %}"/>
@@ -20,8 +18,9 @@
       <button><a href="{% url 'Assessment' %}"><i class="fa fa-fw fa-user"></i> Create Assesment</a></button>
       <button><a href="{% url 'MyHistory' %}"><i class="fa fa-fw fa-search"></i> My History</a></button>
       <button><a href="{% url 'ColleagueHistory' %}"><i class="fa fa-fw fa-search"></i> Colleague's history</a></button>
-        <button><a href="{% url 'login' %}"><i class="fa fa-fw fa-user"></i> Logout</a></button>
-      <button><a href="{% url 'Profile' %}"><i class="fa fa-fw fa-envelope"></i> Hi {{ user.username }}!</a></button>
+        <!--<button><a href="{% url 'login' %}"><i class="fa fa-fw fa-user"></i> Logout</a></button>-->
+      <button><a href="{% url 'Profile' %}"><i class="fa fa-fw fa-envelope"></i> Hi {{ username }}!</a></button>
+      <button><a href = "{% url 'register:logout' %}"><i class="fa fa-fw fa-envelope"></i> Logout</a></button>
 
     </div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
