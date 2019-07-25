@@ -19,15 +19,15 @@
     	<p>Hello {{ username }}!</p>
     	<a href = "{% url 'register:logout' %}">Logout</a>
     {% endif %}
-    <div id="main">
-    <form action="{% url 'register:register' %}" method="POST">
+
+    <form id="form" action="{% url 'register:login' %}" method="POST">
       {% csrf_token %}
       <div class="block">
-          <h4>Register</h4>
-          Username <input type="text" name="username"></input>
-          Email <input type="text" name="email"></input><br>
-          <input type="submit" label="register"></input><br>
-       </div>
+          <h4>Login</h4>
+          Email <input type="text" name="email"></input>
+          Password <input type="password" name="password"></input>
+          <input type="submit" label="login"></input>
+      </div>
     </form>
     </div>
   </body>

@@ -28,6 +28,26 @@ def index(request):
 		return render(request, 'register/index.html', context)
 	else:
 		return render(request, 'register/index.html')
+		
+def loginindex(request):
+	#todo: admin verification to access page
+	#try:
+	#	user = User.objects.get(id = request.session['id'])
+	#	permission = Permission.objects.get(id = "admin id goes here")
+	#	user.permissions.get(id = permission.id)
+	#except:
+	#	return redirect(reverse('login:home'))
+	try:
+		username = request.session['username']
+	except:
+		username = False
+	if username:
+		context = {
+			"username": username
+		}
+		return render(request, 'register/login.html', context)
+	else:
+		return render(request, 'register/login.html')
     
 def register(request):
     user = User.objects.regvalidator(request.POST['username'], request.POST['email'])
