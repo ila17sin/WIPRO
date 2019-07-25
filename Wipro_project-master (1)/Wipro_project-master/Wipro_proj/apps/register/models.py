@@ -28,17 +28,12 @@ class RegistrationManager(models.Manager):
         return {'pwhash': hashword.decode('utf8')}
     def logvalidator(self, email, password):
         errors = []
-        print (email)
-        print (password.encode)
         try:
             user = self.get(email = email)
-            print (user)
-            print (user.pwhash)
             if bcrypt.checkpw(password.encode('utf8'), user.pwhash.encode('utf8')):
                 return {'user': user, 'errors': errors}
             errors.append("Incorrect password")
-        except Exception as ex:
-        	print(ex)
+        except Exception:
         	errors.append("unrecognized email address")
         return {'errors': errors}
 

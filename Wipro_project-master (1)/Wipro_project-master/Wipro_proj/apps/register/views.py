@@ -57,11 +57,11 @@ def login(request):
     namer = User.objects.get(email = request.POST['email'])
     request.session['id'] = namer.id
     request.session['username'] = namer.username
-    return redirect(reverse('register:home'))
+    return redirect(reverse('home'))
     
 def logout(request):
 	del request.session['username']
 	del request.session['id']
-	return redirect(reverse('register:home'))
+	return redirect(reverse('home'))
 
 # Create your views here.
