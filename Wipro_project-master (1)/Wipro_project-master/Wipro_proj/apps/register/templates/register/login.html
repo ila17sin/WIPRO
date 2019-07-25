@@ -22,12 +22,14 @@
 
     <form id="form" action="{% url 'register:login' %}" method="POST">
       {% csrf_token %}
-      <div class="block">
-          <h4>Login</h4>
-          Email <input type="text" name="email"></input>
-          Password <input type="password" name="password"></input>
-          <input type="submit" label="login"></input>
+      <div id="main">
+        <table>
+         <h4>Login</h4>
+          <tr> <td> Email:</td><td> <input type="text" name="email"></input></td></tr>
+          <tr> <td>Password:</td><td> <input type="password" name="password"></input></td></tr>
+          <tr><td colspan="2" align="center"><input type="submit" label="login"></input></td></tr>
       </div>
+      </table>
     </form>
     </div>
   </body>
