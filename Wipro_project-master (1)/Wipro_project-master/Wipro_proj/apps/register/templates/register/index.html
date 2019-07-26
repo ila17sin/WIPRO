@@ -31,10 +31,9 @@
               <tr><td> Username:    </td><td> <input type="text" name="username"></input></td></tr>
               <tr><td> Email:       </td><td> <input type="text" name="email"></input></td></tr>
                 <tr><td> Permissions:</td><td><select name="permissions" class="permissions">
-
-                    {% for permission in permissions %}
-                  <option value="{{permission.desc}}" >{{permission.desc}}</option>
-                  {% endfor %}
+                {% for permission in permissions %}
+                	<option value="{{permission.desc}}" >{{permission.desc}}</option>
+                {% endfor %}
 
 <!--          <option value="supervisor">supervisor</option>-->
                 </select><br></td></tr>

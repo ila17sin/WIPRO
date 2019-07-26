@@ -17,18 +17,23 @@ def index(request):
 	#	user.permissions.get(id = permission.id)
 	#except:
 	#	return redirect(reverse('login:home'))
+	if Permission.objects.filter(desc='employee') and Permission.objects.filter(desc='supervisor').exists() :
+		print('Employee && supervisor permission already present')
+	else:
+		# permissions hard coded as of now
+		print('Creating permissions')
+		Permission.objects.create(desc='employee')
+		Permission.objects.create(desc='supervisor')
 	try:
 		username = request.session['username']
 	except:
 		username = False
+	context = {
+		"permissions":Permission.objects.all()
+	}
 	if username:
-		context = {
-			"username": username,
-			"permissions":Permission.objects.all()
-		}
-		return render(request, 'register/index.html', context)
-	else:
-		return render(request, 'register/index.html')
+		context["username"] = username
+	return render(request, 'register/index.html', context)
 		
 def loginindex(request):
 	#todo: admin verification to access page
@@ -38,18 +43,23 @@ def loginindex(request):
 	#	user.permissions.get(id = permission.id)
 	#except:
 	#	return redirect(reverse('login:home'))
+	if Permission.objects.filter(desc='employee').exists() and Permission.objects.filter(desc='supervisor').exists() :
+		print('Employee && supervisor permission already present')
+	else:
+		# permissions hard coded as of now
+		print('Creating permissions')
+		Permission.objects.create(desc='employee')
+		Permission.objects.create(desc='supervisor')
 	try:
 		username = request.session['username']
 	except:
 		username = False
+	context = {
+		"permissions":Permission.objects.all()
+	}
 	if username:
-		context = {
-			"username": username,
-			"permissions":Permission.objects.all()
-		}
-		return render(request, 'register/login.html', context)
-	else:
-		return render(request, 'register/login.html')
+		context["username"] = username
+	return render(request, 'register/login.html', context)
 
 def register(request):
 
