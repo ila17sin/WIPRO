@@ -158,7 +158,7 @@ def login(request):
     if user['errors'] != []:
         for errors in user['errors']:
             messages.add_message(request, messages.ERROR, errors)
-        return redirect(reverse('register:home'))
+        return redirect(reverse('register:loginhome'))
     namer = User.objects.get(email = request.POST['email'])
     request.session['id'] = namer.id
     request.session['username'] = namer.username
