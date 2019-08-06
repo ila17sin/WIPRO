@@ -6,11 +6,11 @@ from ..register.models import User
 class Organization(models.Model):
 	name = models.CharField(max_length = 255)
 	created_at = models.DateTimeField(auto_now_add = True)
-    updated_at = models.DateTimeField(auto_now = True)
+	updated_at = models.DateTimeField(auto_now = True)
 
 class Assessment(models.Model):
 	#this is how to make a one-to-many field.  Assessments will have one user, while users will have many assessments.
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
-	organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
+	user = models.ForeignKey(User, on_delete=models.CASCADE, related_name = "assessments")
+	organization = models.ForeignKey(Organization, on_delete=models.CASCADE, related_name = "assessments")
 	created_at = models.DateTimeField(auto_now_add = True)
-    updated_at = models.DateTimeField(auto_now = True)
+	updated_at = models.DateTimeField(auto_now = True)

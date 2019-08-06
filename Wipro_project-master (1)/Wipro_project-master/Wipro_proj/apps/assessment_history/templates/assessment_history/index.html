@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'styles/assessment_history/assessment_history.css' %}"media="screen" title="no title"  charset="utf-8">
+    <title>Registration</title>
+  </head>
+
+  <body>
+
+    {% if messages %}
+      <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.ERROR %} class="{{ message.ERROR }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+    {% if username %}
+    	<p>Hello {{ username }}!</p>
+    	<a href = "{% url 'register:logout' %}">Logout</a>
+    {% endif %}
+    <p>Assessments:</p>
+    {% if assessments %}
+    	<table class = "assessments">
+    	{% for assessment in assessments %}
+    		<tr>
+    			<td>{{ assessment.organization.name }} at {{ assessment.created_at }}</td>
+    			<td><a href = "insert assessment data link here">Data</a></td>
+    			<td><a href = "insert assessment visual link here">Visual</a></td>
+    		</tr>
+    	{% endfor %}
+    	</table>
+    {% endif %}
+    <div id="main">
+	<a href = "insert long term">Long Term</a>
+	{% if company %}
+		<a href = "{% url 'assessment_history:all' %}'">View All Assessments</a>
+	{% endif %}
+	<h3>View assessments by company:</h3>
+	<form action="{% url 'assessment_history:company' %}" method="POST">
+	  {% csrf_token %}
+		Input company name:<input type="text" name="company"></input>
+		<input type="submit" label="Submit"></input>
+	</form>
+    </div>
+    <!--<form action="{ url 'assessment_history:testing' }" method="POST">
+		  {% csrf_token %}
+			Input company name:<input type="text" name="company"></input>
+			<input type="submit" label="Submit"></input>
+		</form>-->
+  </body>
+</html>
